@@ -1,0 +1,521 @@
+/*      
+	ELEPHANT STONE Splash Page Style Sheet
+	Music Geek Services for Hidden Pony Records
+	http://musicgeekservices.com
+*/
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  reset
+/////////////////////////////////////////////////////////////////////*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+.clearer {
+	width: 1px;
+	height: 1px;
+	clear: both;
+	visibility: hidden !important;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	_display: none;
+	_position: relative;
+	_left: -9999px;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  global style
+/////////////////////////////////////////////////////////////////////*/
+
+object, embed {
+  outline: 0;
+}  
+
+/*
+html {
+        background: url(../images/bg-v1.jpg) no-repeat center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+*/
+     
+
+body {
+	background: url(../images/bg-4.jpg);
+	font-family: 'Ubuntu', sans-serif;
+	font-size:16px;
+	color: #eee;
+	letter-spacing: 2px;
+	text-align: center;
+
+}
+
+p {
+	line-height: 1.26;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+	font-size: 5em;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+span.elephant {
+	font-family: "century gothic", "ff-meta-sc-web-pro", sans-serif;
+	font-weight: 400;
+}
+
+span.stone {
+	font-family: "century gothic", "ff-meta-sc-web-pro", sans-serif;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	text-shadow: #222 1px 1px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+em {
+	font-style: italic;
+}
+
+.superscript{
+	font-size:xx-small; 
+	vertical-align: super;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  page layout
+/////////////////////////////////////////////////////////////////////*/
+
+.corner-cta {
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+	position:fixed;
+	top: 0;
+	left: 10px;
+	padding-top: 10px;	
+}
+
+.corner-cta a {
+	display: block;
+	float: left;
+	padding: 5px;
+	font-family: "Pictos Custom", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 48px;
+	text-decoration: none;  
+	color: #ccc;  
+
+}
+
+.corner-cta a:hover {
+	color: white;
+	outline: 1px double #EEE;
+	opacity: .8;
+
+}
+
+#wrap {
+	width: 880px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+#logo {
+	margin-bottom: 10px;
+}
+
+#featured-section {
+	width: 853px;
+	margin: 0 auto;
+}
+
+#topspin-section {
+	width: 366px;
+	margin: 30px auto 0px;
+}
+
+.the-stream {
+	border: 8px solid transparent;
+	background-clip: padding-box;
+	-webkit-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	-moz-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	margin: 12px 0 10px 0;
+}
+
+.topspin-widget-email-for-media {
+	padding: 5px 0;
+	width: 320px;
+	margin: 5px auto;
+
+}
+
+#main-section {
+	width: 869px;
+	margin: 20px auto;
+}
+
+#stream-section {
+	float: left;
+	width: 366px;
+	
+}
+
+#info-section {
+	float: left;
+	padding-top: 10px;
+	margin-left: 100px;
+
+}
+
+#buy-section {
+	margin-bottom: 25px;
+}
+
+#buy-buttons {
+	margin-top: 20px;
+}
+
+#tour-announce {
+	margin-top: 40px;
+}
+
+#teaser a {
+	border: none;
+	border-radius: 5px;
+	background: white;
+	background: #8a2626;
+	color: #FFFFFF;
+	display: block;
+	margin: 60px 0 0;
+	padding: 10px 5px;
+	text-transform: uppercase;
+	-webkit-appearance: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	     	transition: all 0.3s ease-in-out;
+}
+
+#teaser a:hover {
+	background: white;
+	color: black;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  header
+/////////////////////////////////////////////////////////////////////*/
+
+.description-text {
+	display: block;
+	font-size: 22px;
+	line-height: 28px;
+	text-align: center;
+	font-weight: 700;
+	text-shadow: #222 1px 1px;
+}
+
+span.album {
+	color: #726fb3;
+	display: inline-block;
+	font-family: "ff-meta-sc-web-pro",sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  HTML e4m
+/////////////////////////////////////////////////////////////////////*/
+
+#ts-e4m {
+text-align: center;
+}
+
+#ts-e4m input[type="submit"] {
+  border: none;
+  border-radius: 0;
+  background: #726fb3;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: normal !important;
+  padding: 11px 5px;
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+  margin-top: 0px;
+  text-shadow: none;
+  margin: 0;
+  -webkit-appearance: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  vertical-align: middle;
+  -webkit-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	-moz-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	box-shadow: 5px 5px 20px rgba(0,0,0,75);
+}
+#ts-e4m input[type="submit"]:hover, #ts-e4m input[type="submit"]:active {
+  color: #222;
+  background: #eee;
+  border: none;
+}
+#ts-e4m input[type="email"] {
+  border-radius: 0;
+  font-style: italic;
+  width: 250px;
+  font-size: 16px;
+  height: 22px !important;
+  color: #222;
+  background: #FFF;
+  padding: 8px 5px;
+  border: solid 1px #FFF;
+  text-shadow: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  vertical-align: middle;
+  -webkit-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	-moz-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	box-shadow: 5px 5px 20px rgba(0,0,0,75);
+}
+#ts-e4m input[type="email"]:focus {
+  color: #FFF;
+  background: #222;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  share
+/////////////////////////////////////////////////////////////////////*/
+
+.share {
+	margin: auto;
+	margin-top: 5px;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.share a {
+	display: block;
+	color: white; 
+	padding: 5px; 
+}
+
+.share a:hover {
+	color: black; 
+	background: white;
+	-webkit-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	-moz-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	box-shadow: 5px 5px 20px rgba(0,0,0,75);
+}
+
+.share-twitter, share-facebook {
+	display: block;
+}
+
+.share-twitter {float: left;}
+.share-facebook {float: right;}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  Buy Button
+/////////////////////////////////////////////////////////////////////*/
+
+a.buy-bttn {
+	display: inline-block;
+	margin: 5px auto 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 36px;
+	padding: 10px 20px;
+	color: #222;
+	background: #f47a28;
+	-webkit-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	-moz-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	box-shadow: 5px 5px 20px rgba(0,0,0,75);
+}
+
+a:hover.buy-bttn {
+	background: #EEE;
+	color: #222;
+}
+
+span.shipping-note {
+	display: block;
+	padding-top: 0px;
+	font-size: 13px;
+	line-height: 1.26;
+	font-style: italic;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  footer
+/////////////////////////////////////////////////////////////////////*/
+
+.continue {
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#continue-top {
+	margin-top: 25px; 
+	margin-bottom: 15px;
+}
+
+#continue-bottom {
+	margin-top: 37px;
+}
+
+.continue a {
+	font-size: 22px;
+	padding: 10px 20px;
+	color: #FFF;
+	background: #726fb3;
+	-webkit-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	-moz-box-shadow: 5px 5px 20px rgba(0,0,0,75);
+	box-shadow: 5px 5px 20px rgba(0,0,0,75);
+}
+
+.continue a:hover {
+	background: white;
+	color: #222;
+}
+
+#footer {
+	margin-top: 60px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size:14px;
+	text-transform: uppercase;
+	text-shadow: #222 1px 1px;
+	padding-bottom: 10px;
+}
+
+#footer a {
+	text-shadow: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  Hidden Pony Logo
+/////////////////////////////////////////////////////////////////////*/	
+
+#hidden-pony {
+	width: 75px;
+	position: fixed;
+	bottom: 5px;
+	right: 10px;
+}	
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+	
+	
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	
+	
+	}
+	
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+	
+	
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}

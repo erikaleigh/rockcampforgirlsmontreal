@@ -1,0 +1,126 @@
+/*
+Theme Name: Sela-child
+Description: A child theme for Sela
+Author: Author: Erika LeBlanc | @erikalleigh | erikalleblanc.com
+Version: 1.0
+Template: Sela
+Theme URI: https://wordpress.com/themes/sela/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, custom-background, custom-colors, custom-menu, featured-images, full-width-template, microformats, right-sidebar, rtl-language-support, sticky-post, translation-ready, two-columns
+*/
+
+/* color palette
+	#4f4f4f - med light grey
+	#8bdee7 - light aqua
+	#d8f8ea - extra light sea green
+	#c2f4de - light sea green
+	#119fa6 - dark turquoise blue
+	#f7f93e - yellow
+*/
+
+/* reset left and right site margins */
+
+.site {
+	max-width: 100%;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+/* change background image in header & size of header container */
+
+.site-branding {
+	background-image: url("images/headerpattern.png");
+	min-height: 130px;
+}
+
+/* change navigation background colour */
+
+.main-navigation {
+	background-color: #c2f4de;
+}
+
+/* change header title colour & spacing */
+
+.site-title a {
+	color: #119fa6;
+	font-size: 5.5rem;
+	letter-spacing: 14px;
+	font-weight: bold;
+	text-shadow: 6px 0.5px #c2f4de;
+}
+
+.site-title {
+	margin-top: 30px;
+}
+
+/* change social links background colour */
+
+.social-links ul a:before {
+	background: #119fa6;
+}
+
+/* change footer background colour */
+
+.site-footer {
+	background-color: #c2f4de;
+}
+
+/* change main nav hover colours */
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul > li.focus > a {
+	color: #119fa6;
+}
+
+.main-navigation ul ul li:hover,
+.main-navigation ul ul li.focus {
+	background: #d8f8ea;
+}
+
+/* change main nav bullet colour */
+
+.main-navigation .nav-menu > li > a:after,
+.main-navigation .menu > li > a:after {
+	color: 	#fff;
+}
+
+/* change post link hover colour */
+
+.entry-title a:hover {
+	color: #119fa6;
+}
+
+/* change footer link hover colour */
+
+.footer-widget-area a:hover {
+	color: #119fa6;
+}
+
+/* change responsive nav menu colour */
+
+.menu-toggle {
+	background-color: #c2f4de;
+}
+
+/* change link colour */
+
+a {
+	color: #8bdee7;
+}
+
+/* change footer font colour */
+
+.site-info {
+	color: #5d5d5d;
+}
+
+.site-info a {
+	color: #5d5d5d;
+}
+
+/* change footer link hover colour */
+
+.site-info a:hover {
+	color: #fff;
+}
