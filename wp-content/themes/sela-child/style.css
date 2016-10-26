@@ -1,7 +1,7 @@
 /*
 Theme Name: Sela-child
 Description: A child theme for Sela
-Author: Author: Erika LeBlanc | @erikalleigh | erikalleblanc.com
+Author: Erika LeBlanc | @erikalleigh
 Version: 1.0
 Template: Sela
 Theme URI: https://wordpress.com/themes/sela/
@@ -11,27 +11,76 @@ Tags: blog, custom-background, custom-colors, custom-menu, featured-images, full
 */
 
 /* color palette
-	#4f4f4f - med light grey
-	#8bdee7 - light aqua
-	#d8f8ea - extra light sea green
-	#c2f4de - light sea green
-	#119fa6 - dark turquoise blue
-	#f7f93e - yellow
+	#4f4f4f
+	#8bdee7
+	#d8f8ea
+	#c2f4de
+	#119fa6
+	#f7f93e
 */
+
+
+/*-----------------------------------------------------------------
+Main
+-----------------------------------------------------------------*/
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Montserrat');
+
 
 /* reset left and right site margins */
 
 .site {
 	max-width: 100%;
-	padding-right: 3px;
-	padding-left: 3px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* remove text overlay on home page image */
+
+.home .hero .hentry {
+    display: none;
+}
+
+/* change fonts */
+
+body, h1, h2, h3, p, ul, a {
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+.front-widget-area .widget-title {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* change link colour */
+
+a {
+	color: #119fa6;
+}
+
+/*remove dotted outline of clicked items*/
+
+a:focus {
+	outline: none;
+}
+
+
+/*-----------------------------------------------------------------
+Header & Nav
+-----------------------------------------------------------------*/
+
+/* remove main nav bottom shadow */
+
+.main-navigation {
+	border-bottom: none;
 }
 
 /* change background image in header & size of header container */
 
 .site-branding {
 	background-image: url("images/headerpattern.png");
-	min-height: 130px;
+	min-height: 120px;
 }
 
 /* change navigation background colour */
@@ -43,27 +92,20 @@ Tags: blog, custom-background, custom-colors, custom-menu, featured-images, full
 /* change header title colour & spacing */
 
 .site-title a {
-	color: #119fa6;
-	font-size: 5.5rem;
-	letter-spacing: 14px;
-	font-weight: bold;
-	text-shadow: 6px 0.5px #c2f4de;
+	color: 	#4f4f4f;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4.5rem;
+	font-weight: 800;
 }
 
 .site-title {
 	margin-top: 30px;
 }
 
-/* change social links background colour */
+/* change main nav font color */
 
-.social-links ul a:before {
-	background: #119fa6;
-}
-
-/* change footer background colour */
-
-.site-footer {
-	background-color: #c2f4de;
+.main-navigation a {
+	color: #5d5d5d;
 }
 
 /* change main nav hover colours */
@@ -75,38 +117,64 @@ Tags: blog, custom-background, custom-colors, custom-menu, featured-images, full
 
 .main-navigation ul ul li:hover,
 .main-navigation ul ul li.focus {
-	background: #d8f8ea;
+	background: #fff;
 }
 
-/* change main nav bullet colour */
-
+ /* change main nav bullet colour */
 .main-navigation .nav-menu > li > a:after,
 .main-navigation .menu > li > a:after {
-	color: 	#fff;
+	color: 	#c2f4de;
 }
 
-/* change post link hover colour */
+.main-navigation ul ul a {
+	color: #5d5d5d;
+	background-color: #c2f4de;
+}
 
-.entry-title a:hover {
-	color: #119fa6;
+/* Responsive : remove main nav bullets */
+.main-navigation ul ul {
+	list-style: none;
+}
+
+/* Responsive - change nav menu colour */
+
+.menu-toggle {
+	background-color: #c2f4de;
+}
+
+/* donate link color */
+/*<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"*/
+
+#menu-item-64 a {
+	color: #fff;
+	border-radius: 10px;
+	background-color: #119fa6;
+	padding: 5px 10px 5px 10px;
+}
+
+
+/*-----------------------------------------------------------------
+Footer
+-----------------------------------------------------------------*/
+
+/* change footer background colour, remove border top */
+
+.site-footer {
+	background-color: #c2f4de;
+	border-top: none;
+}
+
+/* change social links background colour */
+
+.social-links ul a:before {
+	background: #119fa6;
+	margin-right: 20px;
 }
 
 /* change footer link hover colour */
 
 .footer-widget-area a:hover {
 	color: #119fa6;
-}
-
-/* change responsive nav menu colour */
-
-.menu-toggle {
-	background-color: #c2f4de;
-}
-
-/* change link colour */
-
-a {
-	color: #8bdee7;
 }
 
 /* change footer font colour */
@@ -122,5 +190,107 @@ a {
 /* change footer link hover colour */
 
 .site-info a:hover {
+	color: #119fa6;
+}
+
+/* add padding to separator between footer link items & change colour */
+
+.sep {
+	color: #119fa6;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*-----------------------------------------------------------------
+Posts & Widgets
+-----------------------------------------------------------------*/
+
+
+/* remove posts & page background gradients */
+
+.entry-thumbnail,
+.post-thumbnail {
+	background: none;
+}
+
+/* Reset post featured image margin */
+
+.post-thumbnail + .entry-header {
+	margin: 0 0 1em 110px;
+}
+
+/* change post link hover colour */
+
+.entry-title a:hover {
+	color: #119fa6;
+}
+
+/* Remove dash before and after widget titles */
+
+.widget-title:before,
+.widget-title:after {
+	content: none;
+}
+
+/* Align widget titles left */
+
+.widget-title {
+	text-align: left;
+}
+
+/* Change Mailchimp donate button color - front page widget */
+
+#mc_embed_signup
+input.button {
+	background-color: #119fa6;
+}
+
+ /*change side widget button color */
+
+/*button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	background-color: #119fa6;
+}*/
+
+/*button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+#infinite-handle span:active {
+	background-color: #119fa6;
 	color: #fff;
+}*/
+
+/*-----------------------------------------------------------------
+Media Queries
+-----------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1180px) {
+
+	.page-template-full-width-page .site {
+	    max-width: 100%;
+	}
+	.page-template-full-width-page .entry-thumbnail img {
+	    width: 100%;
+	}
+	.content-wrapper.full-width.with-featured-image {
+	    margin: 0;
+	}
+	.hero-content > img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.content-wrapper.full-width.with-featured-image {
+		margin: 0 6.661% 0;
+	}
+
 }

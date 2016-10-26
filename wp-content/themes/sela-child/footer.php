@@ -16,10 +16,11 @@
 		<?php endif; ?>
 
 		<div class="site-info"  role="contentinfo">
-		 <?php printf('Mailing Address: 163B ave. Van Horne, Montreal, QC H2T 2J2'); ?>
+		<a href="http://www.girlsrockmontreal.dev/donate">
+		 <?php printf('Support RC4G MTL'); ?></a>
 		 <span class="sep"> | </span>
-		 <a href="mailto:info@girlsrockmontreal.com" target="_top"><?php printf('info@girlsrockmontreal.com'); ?></a>
-			<span class="sep"> | </span>
+		 <a href="http://www.girlsrockmontreal.dev/contact"><?php printf('Contact'); ?></a>
+		 <span class="sep"> | </span>
 			<?php printf('&copy'); ?>
 			<?php printf('RC4G Montreal'); ?>
 			<?php echo date ("Y") ?>
